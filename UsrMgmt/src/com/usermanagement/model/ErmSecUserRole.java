@@ -38,9 +38,9 @@ public class ErmSecUserRole implements Serializable {
 	private String statusCd;
 
 	//bi-directional many-to-one association to ErmSecUser
-	@ManyToOne
-	@JoinColumn(name="USER_ID")
-	private ErmSecUser ermSecUser;
+	//@ManyToOne
+	//@JoinColumn(name="USER_ID")
+	//private ErmSecUser ermSecUser;
 
 	public ErmSecUserRole() {
 	}
@@ -93,12 +93,12 @@ public class ErmSecUserRole implements Serializable {
 		this.statusCd = statusCd;
 	}
 
-	public ErmSecUser getErmSecUser() {
+	/*public ErmSecUser getErmSecUser() {
 		return this.ermSecUser;
 	}
 
 	public void setErmSecUser(ErmSecUser ermSecUser) {
 		this.ermSecUser = ermSecUser;
-	}
+	}*/
 
 }

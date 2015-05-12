@@ -29,5 +29,12 @@ public class UserManagementService {
 		
 	}
 	
+	
+	@RequestMapping(value="/delete/byLoginId", method=RequestMethod.POST)
+	public @ResponseBody boolean deleteByLoginId( @RequestBody Integer loginId) {	
+	
+		return ermSecUserDao.deleteByLoginId(loginId);
+		
+	}
 
 }

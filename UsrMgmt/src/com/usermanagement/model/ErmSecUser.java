@@ -55,8 +55,8 @@ public class ErmSecUser implements Serializable {
 	private String userType;
 
 	//bi-directional many-to-one association to ErmSecUserRole
-	@OneToMany(mappedBy="ermSecUser")
-	private List<ErmSecUserRole> ermSecUserRoles;
+	//@OneToMany(mappedBy="ermSecUser")
+	//private List<ErmSecUserRole> ermSecUserRoles;
 
 	public ErmSecUser() {
 	}
@@ -157,15 +157,15 @@ public class ErmSecUser implements Serializable {
 		this.userType = userType;
 	}
 
-	public List<ErmSecUserRole> getErmSecUserRoles() {
+	/*public List<ErmSecUserRole> getErmSecUserRoles() {
 		return this.ermSecUserRoles;
 	}
 
 	public void setErmSecUserRoles(List<ErmSecUserRole> ermSecUserRoles) {
 		this.ermSecUserRoles = ermSecUserRoles;
-	}
+	}*/
 
-	public ErmSecUserRole addErmSecUserRole(ErmSecUserRole ermSecUserRole) {
+	/*public ErmSecUserRole addErmSecUserRole(ErmSecUserRole ermSecUserRole) {
 		getErmSecUserRoles().add(ermSecUserRole);
 		ermSecUserRole.setErmSecUser(this);
 
@@ -177,6 +177,6 @@ public class ErmSecUser implements Serializable {
 		ermSecUserRole.setErmSecUser(null);
 
 		return ermSecUserRole;
-	}
+	}*/
 
 }
