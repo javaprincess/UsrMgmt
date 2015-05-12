@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.usermanagement.dao.ErmSecUserDao;
-import com.usermanagmenet.model.ErmSecUser;
+import com.usermanagement.model.ErmSecUser;
 
 
 @Controller

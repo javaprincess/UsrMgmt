@@ -1,6 +1,7 @@
 package com.usermanagement.dao;
 
-import com.usermanagmenet.model.ErmSecUser;
+import com.usermanagement.model.ErmSecUser;
+
 
 public interface ErmSecUserDao {
 	

@@ -2,8 +2,17 @@
 <persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="UserManagement" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<class>com.usermanagmenet.model.ErmSecUser</class>
-		<class>com.usermanagmenet.model.ErmSecUserRole</class>
-		<class>com.usermanagmenet.model.ErmSecUserRolePK</class>
+		<class>com.usermanagement.model.ErmSecUser</class>
+		<class>com.usermanagement.model.ErmSecUserRole</class>
+		<class>com.usermanagement.model.ErmSecUserRolePK</class>
+		
+			
+ 		<exclude-unlisted-classes>true</exclude-unlisted-classes>			
+		<properties>
+			<property name="eclipselink.weaving" value="static"/> 
+		    <property name="eclipselink.logging.level.sql" value="FINE"/>
+            <property name="eclipselink.logging.parameters" value="true"/>	
+          	<property name="jndiName" value="jdbc/ERMDS"/>
+        </properties>	
 	</persistence-unit>
 </persistence>

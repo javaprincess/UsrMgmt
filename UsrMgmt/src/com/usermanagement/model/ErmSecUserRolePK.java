@@ -1,4 +1,4 @@
-package com.usermanagmenet.model;
+package com.usermanagement.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
