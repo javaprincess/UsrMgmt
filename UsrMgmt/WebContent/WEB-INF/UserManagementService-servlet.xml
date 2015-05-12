@@ -18,8 +18,8 @@
     <annotation-driven/>
    
     
-	<beans:bean id="UserManagementService" class="com.usermanagement.service.UserManagementService">
-	</beans:bean>
+	<!--  beans:bean id="UserManagementService" class="com.usermanagement.service.UserManagementService">
+	</beans:bean -->
 
    
 	

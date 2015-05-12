@@ -17,7 +17,7 @@
         <dependent-module archiveName="org.springframework.core-3.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/tracyade/Downloads/org.springframework.core-3.2.5.RELEASE.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <property name="context-root" value="UsrMgmt"/>
         <property name="java-output-path" value="/UsrMgmt/build/WEB-INF/classes"/>
+        <property name="context-root" value="usrMgmt"/>
     </wb-module>
 </project-modules>

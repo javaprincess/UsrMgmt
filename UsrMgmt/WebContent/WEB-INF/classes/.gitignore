@@ -1,2 +1,4 @@
-/UserManagementService-servlet.xml
-/applicationcontext.xml
+/META-INF
+/com
+/web.xml
+/weblogic.xml

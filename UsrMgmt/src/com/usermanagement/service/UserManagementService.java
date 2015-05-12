@@ -22,7 +22,7 @@ public class UserManagementService {
 	}
 	
 	
-	@RequestMapping(value="search/byFullName", method=RequestMethod.POST)
+	@RequestMapping(value="/search/byFullName", method=RequestMethod.POST)
 	public @ResponseBody ErmSecUser findUserByFullName( @RequestBody String fullName) {	
 	
 		return ermSecUserDao.findUserByFullNm(fullName);
