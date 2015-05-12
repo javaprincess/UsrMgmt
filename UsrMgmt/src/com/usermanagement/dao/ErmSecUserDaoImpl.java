@@ -23,7 +23,7 @@ public class ErmSecUserDaoImpl implements ErmSecUserDao {
 	public ErmSecUser findUserByFullNm(String fullName) {
 		 EntityManager entityManager = entityManagerFactory.createEntityManager();
 		 
-		 ErmSecUser user = entityManager.createQuery("Select u from ErmSecUser u where u.fullNm=:fullName or u.fullNm:capsFullName", ErmSecUser.class)
+		 ErmSecUser user = entityManager.createQuery("Select u from ErmSecUser u where u.fullNm=:fullName or u.fullNm=:capsFullName", ErmSecUser.class)
 				.setParameter("fullName", fullName)
 				.setParameter("capsFullName", fullName.toUpperCase())
 				.getSingleResult();

@@ -4,7 +4,7 @@
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>com.usermanagement.model.ErmSecUser</class>
 		<class>com.usermanagement.model.ErmSecUserRole</class>
-		<class>com.usermanagement.model.ErmSecUserRolePK</class>
+		<!--  class>com.usermanagement.model.ErmSecUserRolePK</class -->
 		
 			
  		<exclude-unlisted-classes>true</exclude-unlisted-classes>			

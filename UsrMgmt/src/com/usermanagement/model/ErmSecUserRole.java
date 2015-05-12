@@ -1,7 +1,9 @@
 package com.usermanagement.model;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.util.Date;
 
 
@@ -15,8 +17,11 @@ import java.util.Date;
 public class ErmSecUserRole implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@EmbeddedId
-	private ErmSecUserRolePK id;
+	//@EmbeddedId
+	//private ErmSecUserRolePK id;
+	@Id
+	@Column(name="ROLE_ID")
+	private long roleId;
 
 	@Temporal(TemporalType.DATE)
 	@Column(name="CREATE_DT")
@@ -39,14 +44,22 @@ public class ErmSecUserRole implements Serializable {
 
 	public ErmSecUserRole() {
 	}
+	
+	public long getRoleId() {
+		return this.roleId;
+	}
+	public void setRoleId(long roleId) {
+		this.roleId = roleId;
+	}
 
-	public ErmSecUserRolePK getId() {
+
+	/*public ErmSecUserRolePK getId() {
 		return this.id;
 	}
 
 	public void setId(ErmSecUserRolePK id) {
 		this.id = id;
-	}
+	} */
 
 	public Date getCreateDt() {
 		return this.createDt;
